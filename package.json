@@ -2,7 +2,7 @@
   "name": "avsim-bot",
   "description": "Telegraf bot",
   "scripts": {
-    "start": "${BOT_TOKEN} node index.js",
+    "start": "BOT_TOKEN=${BOT_TOKEN} node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
