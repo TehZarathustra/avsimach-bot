@@ -2,4 +2,4 @@
 
 Расскажет, где кружок кожевенного мастерства
 
-![boss](https://i1.sndcdn.com/avatars-000195200228-m2070l-t500x500.jpg)
+![boss](assets/boss.jpg?width=300)
