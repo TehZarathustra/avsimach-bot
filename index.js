@@ -16,12 +16,18 @@ app.get('/', function (req, res) {
 app.get('/testkek', function (req, res) {
 	console.log('in keks >>>');
 	res.send('keks is working!');
+
+	bot.telegram.sendMessage(process.env.TEST_CHAT, 'keks');
 });
 
 bot.start((ctx) => ctx.reply('Welcome!'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('👍'));
-bot.hears(/привет/i, (ctx) => ctx.reply('Дружок-пирожок, тобой выбрана неправильная дверь'));
+
+bot.hears(/привет|hi/i, ctx => {
+	console.log('ctx >', ctx.chat);
+	ctx.reply('Дружок-пирожок, тобой выбрана неправильная дверь')
+});
 
 bot.startPolling();
 
