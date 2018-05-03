@@ -13,12 +13,12 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function (req, res) {
-	response.send('avsimach telegraf bot');
+	res.send('avsimach telegraf bot');
 });
 
 app.get('/testkek', function (req, res) {
 	console.log('in keks >>>');
-	response.send('keks is working!');
+	res.send('keks is working!');
 });
 
 bot.start((ctx) => ctx.reply('Welcome!'));
