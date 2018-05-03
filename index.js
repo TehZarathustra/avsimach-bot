@@ -19,8 +19,7 @@ app.get('/testkek', function (request, response) {
 bot.start((ctx) => ctx.reply('Welcome!'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('👍'));
-bot.hears('hi', (ctx) => ctx.reply('Hey there'));
-bot.hears(/buy/i, (ctx) => ctx.reply('Buy-buy'));
+bot.hears(/привет/i, (ctx) => ctx.reply('Дружок-пирожок, тобой выбрана неправильная дверь'));
 
 bot.startPolling();
 
