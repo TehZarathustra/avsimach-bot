@@ -1,6 +1,10 @@
 {
   "name": "avsim-bot",
   "description": "Telegraf bot",
+  "scripts": {
+    "start": "${BOT_TOKEN} node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "telegraf": "^3.20.0"
